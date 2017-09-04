@@ -1,4 +1,4 @@
-(function(){
+(function () {
   angular.module('primeiraApp').component('valueBox', {
     bindings: {
       grid: '@',
@@ -9,7 +9,7 @@
     },
     controller: [
       'gridSystem',
-      function(gridSystem) {
+      function (gridSystem) {
         this.$onInit = () => this.gridClasses = gridSystem.toCssClasses(this.grid)
       }
     ],
